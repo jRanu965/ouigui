@@ -1,15 +1,11 @@
-from tkinter.simpledialog import askinteger
-from tkinter import *
+# Addition and Subtraction Calculator
+# Save as calculator.py
+
+import tkinter as tk
 from tkinter import messagebox
-top = Tk()
 
-top.geometry("100x100")
-def show():
-   num = askinteger("Input", "Input an Integer")
-   print(num)
-   
-B = Button(top, text ="Click", command = show)
-B.place(x=50,y=50)
-
-# Code to add widgets will go here...
-top.mainloop()
+# ---------------- WINDOW ----------------
+window = tk.Tk()
+window.title("Calculator App")
+window.geometry("400x400")
+window.configure(bg="lightgray") 
