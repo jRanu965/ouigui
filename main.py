@@ -119,3 +119,33 @@ radio_subtract = tk.Radiobutton(
     activebackground="lightgray"
 )
 radio_subtract.pack()
+
+# ---------------- BUTTON FRAME ----------------
+button_frame = tk.Frame(window, bg="lightgray")
+button_frame.pack(pady=25)
+
+# CALCULATE BUTTON
+calculate_button = tk.Button(
+    button_frame,
+    text="Calculate",
+    font=("Arial", 12, "bold"),
+    width=14,
+    height=1,
+    bg="#242F94",
+    fg="white",
+    command=calculate
+)
+calculate_button.grid(row=0, column=0, padx=15)
+
+# CLEAR BUTTON
+clear_button = tk.Button(
+    button_frame,
+    text="Clear",
+    font=("Arial", 12, "bold"),
+    width=14,
+    height=1,
+    bg="#028128",
+    fg="white",
+    command=clear
+)
+clear_button.grid(row=0, column=1, padx=15)
