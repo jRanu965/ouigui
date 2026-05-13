@@ -149,3 +149,28 @@ clear_button = tk.Button(
     command=clear
 )
 clear_button.grid(row=0, column=1, padx=15)
+
+# ---------------- ANSWER SECTION ----------------
+answer_title = tk.Label(
+    window,
+    text="Your Answer",
+    font=("Arial", 14, "bold"),
+    bg="lightgray"
+)
+answer_title.pack(pady=5)
+
+answer_label = tk.Label(
+    window,
+    text="Answer will appear here",
+    font=("Arial", 16),
+    bg="white",
+    fg="black",
+    width=24,
+    height=2,
+    relief="solid",
+    bd=2
+)
+answer_label.pack(pady=10)
+
+# ---------------- RUN PROGRAM ----------------
+window.mainloop()
