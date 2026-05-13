@@ -49,3 +49,22 @@ title_label.pack(pady=10)
 # ---------------- FRAME ----------------
 input_frame = tk.Frame(window, bg="lightgray")
 input_frame.pack(pady=15)
+
+
+# ---------------- FIRST NUMBER ----------------
+label1 = tk.Label(
+    input_frame,
+    text="Enter First Number",
+    font=("Arial", 12, "bold"),
+    bg="lightgray",
+    fg="black"
+)
+label1.grid(row=0, column=0, padx=10, pady=10, sticky="w")
+
+entry1 = tk.Entry(
+    input_frame,
+    font=("Arial", 13),
+    width=18,
+    bd=3
+)
+entry1.grid(row=0, column=1, padx=10, pady=10)
