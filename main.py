@@ -36,3 +36,14 @@ def clear():
     entry2.delete(0, tk.END)
     answer_label.config(text="Answer: ")
     math_choice.set("")
+
+# ---------------- TITLE LABEL ----------------
+title_label = tk.Label(
+    window,
+    text="Calculator for Addition and Subtraction",
+    font=("Arial", 16),
+    bg="lightgray"
+)
+title_label.pack(pady=10)
+
+
