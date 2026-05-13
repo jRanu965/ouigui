@@ -46,4 +46,6 @@ title_label = tk.Label(
 )
 title_label.pack(pady=10)
 
-
+# ---------------- FRAME ----------------
+input_frame = tk.Frame(window, bg="lightgray")
+input_frame.pack(pady=15)
