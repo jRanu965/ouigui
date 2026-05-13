@@ -68,3 +68,54 @@ entry1 = tk.Entry(
     bd=3
 )
 entry1.grid(row=0, column=1, padx=10, pady=10)
+
+# ---------------- SECOND NUMBER ----------------
+label2 = tk.Label(
+    input_frame,
+    text="Enter Second Number",
+    font=("Arial", 12, "bold"),
+    bg="lightgray",
+    fg="black"
+)
+label2.grid(row=1, column=0, padx=10, pady=10, sticky="w")
+
+entry2 = tk.Entry(
+    input_frame,
+    font=("Arial", 13),
+    width=18,
+    bd=3
+)
+entry2.grid(row=1, column=1, padx=10, pady=10)
+
+# ---------------- OPERATION SECTION ----------------
+operation_label = tk.Label(
+    window,
+    text="Choose an Operation",
+    font=("Arial", 13, "bold"),
+    bg="lightgray"
+)
+operation_label.pack(pady=5)
+
+math_choice = tk.StringVar()
+
+radio_add = tk.Radiobutton(
+    window,
+    text=" Addition (+)",
+    variable=math_choice,
+    value="+",
+    font=("Arial", 12),
+    bg="lightgray",
+    activebackground="lightgray"
+)
+radio_add.pack()
+
+radio_subtract = tk.Radiobutton(
+    window,
+    text=" Subtraction (-)",
+    variable=math_choice,
+    value="-",
+    font=("Arial", 12),
+    bg="lightgray",
+    activebackground="lightgray"
+)
+radio_subtract.pack()
