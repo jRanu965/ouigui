@@ -121,7 +121,7 @@ radio_subtract = tk.Radiobutton(
 radio_subtract.pack()
 
 # ---------------- BUTTON FRAME ----------------
-button_frame = tk.Frame(window, bg="lightgray")
+button_frame = tk.Frame(window, bg="red")
 button_frame.pack(pady=25)
 
 # CALCULATE BUTTON
@@ -131,7 +131,7 @@ calculate_button = tk.Button(
     font=("Arial", 12, "bold"),
     width=14,
     height=1,
-    bg="#242F94",
+    bg="#073168",
     fg="white",
     command=calculate
 )
@@ -155,7 +155,7 @@ answer_title = tk.Label(
     window,
     text="Your Answer",
     font=("Arial", 14, "bold"),
-    bg="lightgray"
+    bg="gray"
 )
 answer_title.pack(pady=5)
 
