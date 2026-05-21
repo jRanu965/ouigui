@@ -10,7 +10,7 @@ window.configure(bg="lightgray")
 # ---------------- FUNCTIONS ----------------
 def calculate():
 
-    # Try to convert user input into numbers
+    # Try to convert user input into numbers 
     try:
         num1 = float(entry1.get())
         num2 = float(entry2.get())
@@ -122,7 +122,7 @@ radio_add = tk.Radiobutton(
     activebackground="lightgray"
 )
 radio_add.pack()
-
+  
 # Subtraction radio button
 radio_subtract = tk.Radiobutton(
     window,
@@ -188,4 +188,4 @@ answer_label = tk.Label(
 answer_label.pack(pady=10)
 
 # ---------------- RUN PROGRAM ----------------
-window.mainloop()
+window.mainloop()   
