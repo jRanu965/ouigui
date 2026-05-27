@@ -8,7 +8,7 @@ window.geometry("400x400")
 window.configure(bg="lightgray")
 
 # ---------------- FUNCTIONS ----------------
-def calculate():
+def calculate(): 
 
     # Try to convert user input into numbers 
     try:
