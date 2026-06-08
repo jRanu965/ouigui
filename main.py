@@ -17,6 +17,7 @@ def calculate():
 
         # Get selected operation from radio buttons
         operation = math_choice.get()
+    
 
         # Check which operation user selected
         if operation == "+":
@@ -60,7 +61,7 @@ title_label = tk.Label(
 title_label.pack(pady=10)
 
 # ---------------- FRAME ----------------
-input_frame = tk.Frame(window, bg="lightgray")
+input_frame = tk.Frame(window, bg="red")
 input_frame.pack(pady=15)
 
 # ---------------- FIRST NUMBER ----------------
@@ -110,6 +111,9 @@ operation_label.pack(pady=5)
 
 # Variable to store selected radio button
 math_choice = tk.StringVar()
+
+# Set default selection (must match one of the radio button values)
+math_choice.set("+")
 
 # Addition radio button
 radio_add = tk.Radiobutton(
